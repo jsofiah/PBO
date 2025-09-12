@@ -5,6 +5,30 @@ public class motor{
     private boolean isMesinon;
     private int kecepatan;
 
+    public String getPlatNomor(){
+        return platNomor;
+    }
+
+    public void setPlatNomor(String platNomor){
+        this.platNomor = platNomor;
+    }
+
+    public boolean isIsMesinOn(){
+        return isMesinon;
+    }
+
+    public void setIsMesinOn(boolean isMesinon){
+        this.isMesinon = isMesinon;
+    }
+
+    public int getKecepatan(){
+        return kecepatan;
+    }
+
+    public void setKecepatan(int kecepatan){
+        this.kecepatan = kecepatan;
+    }
+
     public void displayStatus(){
         System.out.println("Plat Nomor: " + this.platNomor);
 
