@@ -1,9 +1,9 @@
 package jobsheet_3;
 
 public class motor{
-    public String platNomor;
-    public boolean isMesinon;
-    public int kecepatan;
+    private String platNomor;
+    private boolean isMesinon;
+    private int kecepatan;
 
     public void displayStatus(){
         System.out.println("Plat Nomor: " + this.platNomor);
