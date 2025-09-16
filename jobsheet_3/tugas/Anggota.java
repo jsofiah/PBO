@@ -34,9 +34,13 @@ public class Anggota {
     }
 
     public void angsur(int jmlAngsur){
-        jumlahPinjam -= jmlAngsur;
-        if (jumlahPinjam < 0) {
-            jumlahPinjam = 0;
+        if (jmlAngsur < (0.1 * jumlahPinjam)){
+            System.out.println("Maaf, angsuran harus 10% dari jumlah pinjaman");
+        } else {
+            jumlahPinjam -= jmlAngsur;
+            if (jumlahPinjam < 0) {
+                jumlahPinjam = 0;
+            }
         }
     }
 }
