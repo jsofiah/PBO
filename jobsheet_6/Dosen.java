@@ -1,6 +1,4 @@
 package jobsheet_6;
-import jobsheet_6.testpackage.Pegawai;
-
 public class Dosen extends Pegawai {
     public String nidn;
 
