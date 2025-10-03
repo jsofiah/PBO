@@ -1,4 +1,5 @@
-package jobsheet_6;
+package jobsheet_6.testpackage;
+import jobsheet_6.Dosen;
 
 public class InheritanceDemo {
     public static void main(String[] args) {
