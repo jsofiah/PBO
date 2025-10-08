@@ -1,5 +1,3 @@
-package jobsheet_7;
-
 public class Pegawai {
     public String nip;
     public String nama;

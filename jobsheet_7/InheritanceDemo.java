@@ -1,4 +1,3 @@
-package jobsheet_7;
 public class InheritanceDemo {
     public static void main(String[] args) {
         Dosen dosen1 = new Dosen();
@@ -8,6 +7,6 @@ public class InheritanceDemo {
         dosen1.gaji = 3000000;
         dosen1.nidn = "1989432439";
 
-        System.out.println(dosen1.getInfo());
+        System.out.println(dosen1.getAllInfo());
     }
 }
