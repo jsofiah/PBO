@@ -1,16 +1,22 @@
+import java.util.ArrayList;
+
 public class RuangPerawatan {
     private String noRuang;
     private int kapasitas;
-    private KartuPerawatan kartuRawat;
+    private ArrayList<KartuPerawatan> kartuRawat;
 
-    public RuangPerawatan(String noRuang, int kapasitas, KartuPerawatan kartuRawat) {
+    public RuangPerawatan(String noRuang, int kapasitas) {
         this.noRuang = noRuang;
         this.kapasitas = kapasitas;
-        this.kartuRawat = kartuRawat;
+        this.kartuRawat = new ArrayList<>();
     }
 
     public String getNoRuang(){
         return noRuang;
+    }
+
+    public void tambahKartu(KartuPerawatan kartu) {
+        kartuRawat.add(kartu);
     }
 
     public void setNoRuang(String noRuang){
@@ -26,7 +32,9 @@ public class RuangPerawatan {
     }
 
     public void tampilRuang() {
-        kartuRawat.tampilKartu();
+        for (KartuPerawatan k : kartuRawat) {
+            k.tampilKartu();
+        }
         System.out.println("| No Ruang        : " + getNoRuang());
         System.out.println("| Kapasitas       : " + getKapasitas());
     }
