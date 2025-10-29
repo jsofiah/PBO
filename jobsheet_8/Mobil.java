@@ -19,4 +19,3 @@ public class Mobil extends Kendaraan{
         System.out.println("Jumlah Pintu   : " + jumlahPintu);
     }
 }
-
