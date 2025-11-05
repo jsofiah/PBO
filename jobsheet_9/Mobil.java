@@ -1,4 +1,4 @@
-public class Mobil extends Kendaraan implements IBisaDinyalakan {
+public class Mobil extends Kendaraan implements IBisaDinyalakan, IIsiBahanBakar {
     public int jumlahPintu;
 
     public Mobil(String merek, int tahun, String warna, int jumlahPintu) {
@@ -11,5 +11,9 @@ public class Mobil extends Kendaraan implements IBisaDinyalakan {
     }
     public void dimatikan() {
         System.out.println("Mobil " + getMerek() + " mematikan mesin dengan tombol stop.");
+    }
+
+    public void isiBahanBakar(){
+        System.out.println("Mobil " + getMerek() + " sedang mengisi bahan bakar dengan Solar");
     }
 }

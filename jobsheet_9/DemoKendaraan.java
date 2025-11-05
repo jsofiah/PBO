@@ -7,11 +7,13 @@ public class DemoKendaraan {
         mobil.tampilkanInfo();
         mobil.dinyalakan();
         mobil.dimatikan();
+        mobil.isiBahanBakar();
 
         System.out.println("\n================================ Informasi Motor ================================");
         motor.tampilkanInfo();
         motor.dinyalakan();
         motor.dimatikan();
+        motor.isiBahanBakar();
 
         System.out.println("\n================================ Ubah Data Mobil ================================");
         mobil.setWarna("Putih");
