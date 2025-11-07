@@ -15,6 +15,6 @@ public class Kipas extends AlatElektronik {
     }
 
     public String getInfo() {
-        return "\nKipas " + jenis + super.getInfo();
+        return "\nKipas " + jenis + " - " + super.getInfo();
     }
 }

@@ -5,15 +5,17 @@ public class DemoKendaraan {
 
         System.out.println("\n================================ Informasi Mobil ================================");
         mobil.tampilkanInfo();
-        mobil.dinyalakan();
+        mobil.starter();
         mobil.dimatikan();
-        mobil.isiBahanBakar();
+        mobil.mesin();
+        mobil.roda();
 
         System.out.println("\n================================ Informasi Motor ================================");
         motor.tampilkanInfo();
-        motor.dinyalakan();
+        motor.starter();
         motor.dimatikan();
-        motor.isiBahanBakar();
+        motor.mesin();
+        motor.roda();
 
         System.out.println("\n================================ Ubah Data Mobil ================================");
         mobil.setWarna("Putih");
